@@ -1,11 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>🏠 내 Go 홈서버</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <h1>TEST HOME SERVER</h1>
+    <div class="container">
+        <h1>🏠 내 Go 홈서버</h1>
+        <p class="subtitle">직접 구현한 TCP 소켓 기반 웹서버</p>
+        
+        <div id="clock"></div>
+        
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-number" id="visitors">1</div>
+                <div>방문자</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">80</div>
+                <div>포트</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">HTTP/1.1</div>
+                <div>프로토콜</div>
+            </div>
+        </div>
+
+        <button class="button" onclick="checkConnection()">🔍 연결 상태 확인</button>
+        <button class="button" onclick="showInfo()">ℹ️ 서버 정보</button>
+
+        <div class="tech-stack">
+            <span class="tech-tag">Go</span>
+            <span class="tech-tag">TCP 소켓</span>
+            <span class="tech-tag">HTTP/1.1</span>
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">Vanilla JS</span>
+        </div>
+
+        <div class="footer">
+            <p>🎯 파인만 기법으로 학습한 네트워크 프로그래밍</p>
+            <p>Express.js 없이 순수 Go로 구현</p>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
 </body>
 </html>
