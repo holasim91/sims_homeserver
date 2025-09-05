@@ -69,6 +69,7 @@ app.get('/', (req, res) => {
 - **TCP 3-Way Handshake**: SYN → SYN-ACK → ACK
 - **HTTP 메시지 교환**: 요청 → 파싱 → 응답 생성 → 전송
 - **연결 종료**: FIN-ACK 교환을 통한 정중한 연결 해제
+![image](./images/wireshark.png)
 
 ### 💡 1단계 후기
 
